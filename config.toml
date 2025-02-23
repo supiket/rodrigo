@@ -1,0 +1,57 @@
+base_url = "http://127.0.0.1:1111/"
+
+default_language = "pt-br"
+compile_sass = false
+build_search_index = false
+theme = "papaya"
+
+[markdown]
+highlight_code = true
+
+[languages]
+
+[languages.pt-br]
+title = "Autor Rodrigo de Jesus"
+description = "Rodrigo de Jesus nasceu em Ponta Grossa, no Paraná, mas nunca parou na paragem dos tropeiros. Desde cedo, talvez guiado pelas mesmas estrelas dos seus ancestrais ciganos, viveu em diversas cidades dos interiores brasileiros, tanto com sua família como sozinho. Enquanto viajava pelas estradas, aventurava-se também na literatura e na elaboração das suas próprias histórias. Trabalhou nos mais diferentes lugares, de restaurantes e vendas ambulantes a bibliotecas e centros culturais, o que enriqueceu sua formação como autor. Cursou Letras na UFPR e atuou por um tempo no Programa Curitiba Lê desenvolvendo projetos de leitura em Curitiba. Em 2020, foi um dos vencedores do Prêmio Biblioteca Digital, com o romance Tapiribi, iniciando sua carreira de escritor. Atualmente vive em Lisboa e conhece todas as árvores de Araucária que existem ali."
+taxonomies = [
+    { name = "categories", feed = true, lang = "pt-br" },
+]
+
+[languages.pt-br.translations]
+about = "Sobre"
+projects = "Obras"
+recent_projects = "Obras Recentes"
+more_projects = "Mais Obras"
+category = "Categoria"
+categories = "Categorias"
+to_all_categories = "Ver todas as categorias"
+view_by = "Ver por"
+other = "Outro"
+minute = "min"
+prev_page = "Obras mais recentes"
+next_page = "Obras mais antigas"
+# Customize your post date format. See: https://tera.netlify.app/docs/#date
+date_format = "%m/%Y"
+
+[extra]
+color_mode = "auto"
+menu_items = [
+    { name = "projects", url = "$LANG_BASE_URL/projects", show_recent = true, recent_items = 20, recent_trans_key = "recent_projects", more_trans_key = "more_projects" },
+    { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
+]
+
+[extra.cdn]
+font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+
+[extra.images]
+max_width = 2500
+
+[extra.ogp]
+locale = "pt_PT"
+first_name = "Rodrigo"
+last_name = "de Jesus"
+gender = "male"
+username = "rodrigo_de_jesus"
+
+[extra.social]
+email = "extra@exampleemail.com"
